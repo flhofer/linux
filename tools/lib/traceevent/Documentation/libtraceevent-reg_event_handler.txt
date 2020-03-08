@@ -98,7 +98,7 @@ int timer_expire_handler(struct trace_seq *s, struct tep_record *record,
 	if (ret < 0) {
 		char buf[32];
 
-		tep_strerror(tep, ret, buf, 32)
+		tep_strerror(tep, ret, buf, 32);
 		printf("Failed to register handler for hrtimer_expire_entry: %s\n", buf);
 	} else {
 		switch (ret) {
