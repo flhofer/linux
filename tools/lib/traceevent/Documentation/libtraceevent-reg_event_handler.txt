@@ -115,6 +115,7 @@ int timer_expire_handler(struct trace_seq *s, struct tep_record *record,
 					   timer_expire_handler, NULL);
 	if ( ret )
 		printf ("Failed to unregister handler for hrtimer_expire_entry\n");
+...
 
 --
 
