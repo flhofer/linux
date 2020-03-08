@@ -60,7 +60,7 @@ EXAMPLE
 struct tep_handle *tep = tep_alloc();
 ...
 int i;
-struct tep_event_format **events;
+struct tep_event **events;
 
 i=0;
 events = tep_list_events(tep, TEP_EVENT_SORT_ID);
